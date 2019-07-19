@@ -20,7 +20,7 @@ public class EquipmentSlot : Slot
         if (eventData.button == PointerEventData.InputButton.Right) {
             if (InventoryManager.Instance.IsPicked || !HasItem()) return;
 
-            DestroyItemUI();        // 解决延迟问题   // Destroy(transform.GetChild(0).gameObject);
+            DestroyItemUI();        // 解决延迟问题   // Destroy(transform.GetChild(0).gameObject); DestroyImmediate
             transform.parent.parent.SendMessage("PutOff", ItemUI.Item);    // CharacterPanel
             InventoryManager.Instance.HideToolTip();
             needUpdate = true;

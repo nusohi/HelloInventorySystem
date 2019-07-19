@@ -40,5 +40,13 @@
 
 ![UML图](README/UML.png)
 
-（*部分UML*）
+
+
+![UML-Inventory](README/UML-Inventory.png)
+
+
+
+![UML-Slot](README/UML-Slot.png)
+
+
 
